@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogstagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e2024a82b4.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: linear-gradient(to right, gray, bisque, rgb(197, 239, 247));
+
+        }
+
+        p,
+        label {
+            font-size: large;
+            font-weight: 500;
+        }
+
+        img {
+            border-radius: 5%;
+            border-bottom: 1px solid gray;
+        }
+
+        .col {
+            padding: 5px;
+        }
+
+        .bl {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 id="title" class="text-center"><i class="fa-solid fa-dog"></i> Dogstagram! <i
+                class="fa-solid fa-camera"></i></h1>
+        <p class="text-center" id="description">Gallery of various breeds of dogs from around the world </p>
+        <div class=" bl">
+            <form action="" id="random-submit">
+                <label>Select</label>
+                <select name="dogs" class="dogBreed" id="breed">
+
+                    <option class="dogBreed" value="affenpinscher">affenpinscher</option>
+                    <option class="dogBreed" value="african">african</option>
+                    <option class="dogBreed" value="airedale">airedale</option>
+                    <option class="dogBreed" value="akita">akita</option>
+                    <option class="dogBreed" value="appenzeller">appenzeller</option>
+                    <option class="dogBreed" value="australian-shepherd">australian-shepherd</option>
+                    <option class="dogBreed" value="basenji">basenji</option>
+                    <option class="dogBreed" value="beagle">beagle</option>
+                    <option class="dogBreed" value="bluetick">bluetick</option>
+                    <option class="dogBreed" value="borzoi">borzoi</option>
+                    <option class="dogBreed" value="bouvier">bouvier</option>
+                    <option class="dogBreed" value="boxer">boxer</option>
+                    <option class="dogBreed" value="brabancon">brabancon</option>
+                    <option class="dogBreed" value="briard">briard</option>
+                    <option class="dogBreed" value="buhund-norwegian">buhund-norwegian</option>
+                    <option class="dogBreed" value="bulldog-boston">bulldog-boston</option>
+                    <option class="dogBreed" value="bulldog-english">bulldog-english</option>
+                    <option class="dogBreed" value="bulldog-french">bulldog-french</option>
+                    <option class="dogBreed" value="bullterrier-staffordshire">bullterrier-staffordshire</option>
+                    <option class="dogBreed" value="cattledog-australian">cattledog-australian</option>
+                    <option class="dogBreed" value="chihuahua">chihuahua</option>
+                    <option class="dogBreed" value="chow">chow</option>
+                    <option class="dogBreed" value="clumber">clumber</option>
+                    <option class="dogBreed" value="cockapoo">cockapoo</option>
+                    <option class="dogBreed" value="collie-border">collie-border</option>
+                    <option class="dogBreed" value="coonhound">coonhound</option>
+                    <option class="dogBreed" value="corgi-cardigan">corgi-cardigan</option>
+                    <option class="dogBreed" value="cotondetulear">cotondetulear</option>
+                    <option class="dogBreed" value="dachshund">dachshund</option>
+                    <option class="dogBreed" value="dalmatian">dalmatian</option>
+                    <option class="dogBreed" value="dane-great">dane-great</option>
+                    <option class="dogBreed" value="deerhound-scottish">deerhound-scottish</option>
+                    <option class="dogBreed" value="dhole">dhole</option>
+                    <option class="dogBreed" value="dingo">dingo</option>
+                    <option class="dogBreed" value="doberman">doberman</option>
+                    <option class="dogBreed" value="elkhound-norwegian">elkhound-norwegian</option>
+                    <option class="dogBreed" value="entlebucher">entlebucher</option>
+                    <option class="dogBreed" value="eskimo">eskimo</option>
+                    <option class="dogBreed" value="finnish-lapphund">finnish-lapphund</option>
+                    <option class="dogBreed" value="frise-bichon">frise-bichon</option>
+                    <option class="dogBreed" value="germanshepherd">germanshepherd</option>
+                    <option class="dogBreed" value="greyhound-italian">greyhound-italian</option>
+                    <option class="dogBreed" value="groenendael">groenendael</option>
+                    <option class="dogBreed" value="havanese">havanese</option>
+                    <option class="dogBreed" value="hound-afghan">hound-afghan</option>
+                    <option class="dogBreed" value="hound-basset">hound-basset</option>
+                    <option class="dogBreed" value="hound-blood">hound-blood</option>
+                    <option class="dogBreed" value="hound-english">hound-english</option>
+                    <option class="dogBreed" value="hound-ibizan">hound-ibizan</option>
+                    <option class="dogBreed" value="hound-plott">hound-plott</option>
+                    <option class="dogBreed" value="hound-walker">hound-walker</option>
+                    <option class="dogBreed" value="husky">husky</option>
+                    <option class="dogBreed" value="keeshond">keeshond</option>
+                    <option class="dogBreed" value="kelpie">kelpie</option>
+                    <option class="dogBreed" value="komondor">komondor</option>
+                    <option class="dogBreed" value="kuvasz">kuvasz</option>
+                    <option class="dogBreed" value="labradoodle">labradoodle</option>
+                    <option class="dogBreed" value="labrador">labrador</option>
+                    <option class="dogBreed" value="leonberg">leonberg</option>
+                    <option class="dogBreed" value="lhasa">lhasa</option>
+                    <option class="dogBreed" value="malamute">malamute</option>
+                    <option class="dogBreed" value="malinois">malinois</option>
+                    <option class="dogBreed" value="maltese">maltese</option>
+                    <option class="dogBreed" value="mastiff-bull">mastiff-bull</option>
+                    <option class="dogBreed" value="mastiff-english">mastiff-english</option>
+                    <option class="dogBreed" value="mastiff-tibetan">mastiff-tibetan</option>
+                    <option class="dogBreed" value="mexicanhairless">mexicanhairless</option>
+                    <option class="dogBreed" value="mix">mix</option>
+                    <option class="dogBreed" value="mountain-bernese">mountain-bernese</option>
+                    <option class="dogBreed" value="mountain-swiss">mountain-swiss</option>
+                    <option class="dogBreed" value="newfoundland">newfoundland</option>
+                    <option class="dogBreed" value="otterhound">otterhound</option>
+                    <option class="dogBreed" value="ovcharka-caucasian">ovcharka-caucasian</option>
+                    <option class="dogBreed" value="papillon">papillon</option>
+                    <option class="dogBreed" value="pekinese">pekinese</option>
+                    <option class="dogBreed" value="pembroke">pembroke</option>
+                    <option class="dogBreed" value="pinscher-miniature">pinscher-miniature</option>
+                    <option class="dogBreed" value="pitbull">pitbull</option>
+                    <option class="dogBreed" value="pointer-german">pointer-german</option>
+                    <option class="dogBreed" value="pointer-germanlonghair">pointer-germanlonghair</option>
+                    <option class="dogBreed" value="pomeranian">pomeranian</option>
+                    <option class="dogBreed" value="poodle-medium">poodle-medium</option>
+                    <option class="dogBreed" value="poodle-miniature">poodle-miniature</option>
+                    <option class="dogBreed" value="poodle-standard">poodle-standard</option>
+                    <option class="dogBreed" value="poodle-toy">poodle-toy</option>
+                    <option class="dogBreed" value="pug">pug</option>
+                    <option class="dogBreed" value="puggle">puggle</option>
+                    <option class="dogBreed" value="pyrenees">pyrenees</option>
+                    <option class="dogBreed" value="redbone">redbone</option>
+                    <option class="dogBreed" value="retriever-chesapeake">retriever-chesapeake</option>
+                    <option class="dogBreed" value="retriever-curly">retriever-curly</option>
+                    <option class="dogBreed" value="retriever-flatcoated">retriever-flatcoated</option>
+                    <option class="dogBreed" value="retriever-golden">retriever-golden</option>
+                    <option class="dogBreed" value="ridgeback-rhodesian">ridgeback-rhodesian</option>
+                    <option class="dogBreed" value="rottweiler">rottweiler</option>
+                    <option class="dogBreed" value="saluki">saluki</option>
+                    <option class="dogBreed" value="samoyed">samoyed</option>
+                    <option class="dogBreed" value="schipperke">schipperke</option>
+                    <option class="dogBreed" value="schnauzer-giant">schnauzer-giant</option>
+                    <option class="dogBreed" value="schnauzer-miniature">schnauzer-miniature</option>
+                    <option class="dogBreed" value="segugio-italian">segugio-italian</option>
+                    <option class="dogBreed" value="setter-english">setter-english</option>
+                    <option class="dogBreed" value="setter-gordon">setter-gordon</option>
+                    <option class="dogBreed" value="setter-irish">setter-irish</option>
+                    <option class="dogBreed" value="sharpei">sharpei</option>
+                    <option class="dogBreed" value="sheepdog-english">sheepdog-english</option>
+                    <option class="dogBreed" value="sheepdog-shetland">sheepdog-shetland</option>
+                    <option class="dogBreed" value="shiba">shiba</option>
+                    <option class="dogBreed" value="shihtzu">shihtzu</option>
+                    <option class="dogBreed" value="spaniel-blenheim">spaniel-blenheim</option>
+                    <option class="dogBreed" value="spaniel-brittany">spaniel-brittany</option>
+                    <option class="dogBreed" value="spaniel-cocker">spaniel-cocker</option>
+                    <option class="dogBreed" value="spaniel-irish">spaniel-irish</option>
+                    <option class="dogBreed" value="spaniel-japanese">spaniel-japanese</option>
+                    <option class="dogBreed" value="spaniel-sussex">spaniel-sussex</option>
+                    <option class="dogBreed" value="spaniel-welsh">spaniel-welsh</option>
+                    <option class="dogBreed" value="spitz-japanese">spitz-japanese</option>
+                    <option class="dogBreed" value="springer-english">springer-english</option>
+                    <option class="dogBreed" value="stbernard">stbernard</option>
+                    <option class="dogBreed" value="terrier-american">terrier-american</option>
+                    <option class="dogBreed" value="terrier-australian">terrier-australian</option>
+                    <option class="dogBreed" value="terrier-bedlington">terrier-bedlington</option>
+                    <option class="dogBreed" value="terrier-border">terrier-border</option>
+                    <option class="dogBreed" value="terrier-cairn">terrier-cairn</option>
+                    <option class="dogBreed" value="terrier-dandie">terrier-dandie</option>
+                    <option class="dogBreed" value="terrier-fox">terrier-fox</option>
+                    <option class="dogBreed" value="terrier-irish">terrier-irish</option>
+                    <option class="dogBreed" value="terrier-kerryblue">terrier-kerryblue</option>
+                    <option class="dogBreed" value="terrier-lakeland">terrier-lakeland</option>
+                    <option class="dogBreed" value="terrier-norfolk">terrier-norfolk</option>
+                    <option class="dogBreed" value="terrier-norwich">terrier-norwich</option>
+                    <option class="dogBreed" value="terrier-patterdale">terrier-patterdale</option>
+                    <option class="dogBreed" value="terrier-russell">terrier-russell</option>
+                    <option class="dogBreed" value="terrier-scottish">terrier-scottish</option>
+                    <option class="dogBreed" value="terrier-sealyham">terrier-sealyham</option>
+                    <option class="dogBreed" value="terrier-silky">terrier-silky</option>
+                    <option class="dogBreed" value="terrier-tibetan">terrier-tibetan</option>
+                    <option class="dogBreed" value="terrier-toy">terrier-toy</option>
+                    <option class="dogBreed" value="terrier-welsh">terrier-welsh</option>
+                    <option class="dogBreed" value="terrier-westhighland">terrier-westhighland</option>
+                    <option class="dogBreed" value="terrier-wheaten">terrier-wheaten</option>
+                    <option class="dogBreed" value="terrier-yorkshire">terrier-yorkshire</option>
+                    <option class="dogBreed" value="tervuren">tervuren</option>
+                    <option class="dogBreed" value="vizsla">vizsla</option>
+                    <option class="dogBreed" value="waterdog-spanish">waterdog-spanish</option>
+                    <option class="dogBreed" value="weimaraner">weimaraner</option>
+                    <option class="dogBreed" value="whippet">whippet</option>
+                    <option class="dogBreed" value="wolfhound-irish">wolfhound-irish</option>
+                </select>
+                <button type="submit" class="btn btn-primary"><i class="fa-solid fa-shield-dog"></i> Fetch
+                    Sub-breed</button>
+            </form>
+        </div>
+
+        <div class="bl">
+
+            <form action="" id="all-submit">
+                <label>Select</label>
+                <select name="dogs" class="dogBreed " id="mainbreed">
+                    <option class="mainBreed" value="affenpinscher">affenpinscher</option>
+                    <option class="mainBreed" value="african">african</option>
+                    <option class="mainBreed" value="airedale">airedale</option>
+                    <option class="mainBreed" value="akita">akita</option>
+                    <option class="mainBreed" value="appenzeller">appenzeller</option>
+                    <option class="mainBreed" value="australian">australian</option>
+                    <option class="mainBreed" value="basenji">basenji</option>
+                    <option class="mainBreed" value="beagle">beagle</option>
+                    <option class="mainBreed" value="bluetick">bluetick</option>
+                    <option class="mainBreed" value="borzoi">borzoi</option>
+                    <option class="mainBreed" value="bouvier">bouvier</option>
+                    <option class="mainBreed" value="boxer">boxer</option>
+                    <option class="mainBreed" value="brabancon">brabancon</option>
+                    <option class="mainBreed" value="briard">briard</option>
+                    <option class="mainBreed" value="buhund">buhund</option>
+                    <option class="mainBreed" value="bulldog">bulldog</option>
+                    <option class="mainBreed" value="bullterrier">bullterrier</option>
+                    <option class="mainBreed" value="cattledog">cattledog</option>
+                    <option class="mainBreed" value="chihuahua">chihuahua</option>
+                    <option class="mainBreed" value="chow">chow</option>
+                    <option class="mainBreed" value="clumber">clumber</option>
+                    <option class="mainBreed" value="cockapoo">cockapoo</option>
+                    <option class="mainBreed" value="collie">collie</option>
+                    <option class="mainBreed" value="coonhound">coonhound</option>
+                    <option class="mainBreed" value="corgi">corgi</option>
+                    <option class="mainBreed" value="cotondetulear">cotondetulear</option>
+                    <option class="mainBreed" value="dachshund">dachshund</option>
+                    <option class="mainBreed" value="dalmatian">dalmatian</option>
+                    <option class="mainBreed" value="dane">dane</option>
+                    <option class="mainBreed" value="deerhound">deerhound</option>
+                    <option class="mainBreed" value="dhole">dhole</option>
+                    <option class="mainBreed" value="dingo">dingo</option>
+                    <option class="mainBreed" value="doberman">doberman</option>
+                    <option class="mainBreed" value="elkhound">elkhound</option>
+                    <option class="mainBreed" value="entlebucher">entlebucher</option>
+                    <option class="mainBreed" value="eskimo">eskimo</option>
+                    <option class="mainBreed" value="finnish">finnish</option>
+                    <option class="mainBreed" value="frise">frise</option>
+                    <option class="mainBreed" value="germanshepherd">germanshepherd</option>
+                    <option class="mainBreed" value="greyhound">greyhound</option>
+                    <option class="mainBreed" value="groenendael">groenendael</option>
+                    <option class="mainBreed" value="havanese">havanese</option>
+                    <option class="mainBreed" value="hound">hound</option>
+                    <option class="mainBreed" value="husky">husky</option>
+                    <option class="mainBreed" value="keeshond">keeshond</option>
+                    <option class="mainBreed" value="kelpie">kelpie</option>
+                    <option class="mainBreed" value="komondor">komondor</option>
+                    <option class="mainBreed" value="kuvasz">kuvasz</option>
+                    <option class="mainBreed" value="labradoodle">labradoodle</option>
+                    <option class="mainBreed" value="labrador">labrador</option>
+                    <option class="mainBreed" value="leonberg">leonberg</option>
+                    <option class="mainBreed" value="lhasa">lhasa</option>
+                    <option class="mainBreed" value="malamute">malamute</option>
+                    <option class="mainBreed" value="malinois">malinois</option>
+                    <option class="mainBreed" value="maltese">maltese</option>
+                    <option class="mainBreed" value="mastiff">mastiff</option>
+                    <option class="mainBreed" value="mexicanhairless">mexicanhairless</option>
+                    <option class="mainBreed" value="mix">mix</option>
+                    <option class="mainBreed" value="mountain">mountain</option>
+                    <option class="mainBreed" value="newfoundland">newfoundland</option>
+                    <option class="mainBreed" value="otterhound">otterhound</option>
+                    <option class="mainBreed" value="ovcharka">ovcharka</option>
+                    <option class="mainBreed" value="papillon">papillon</option>
+                    <option class="mainBreed" value="pekinese">pekinese</option>
+                    <option class="mainBreed" value="pembroke">pembroke</option>
+                    <option class="mainBreed" value="pinscher">pinscher</option>
+                    <option class="mainBreed" value="pitbull">pitbull</option>
+                    <option class="mainBreed" value="pointer">pointer</option>
+                    <option class="mainBreed" value="pomeranian">pomeranian</option>
+                    <option class="mainBreed" value="poodle">poodle</option>
+                    <option class="mainBreed" value="pug">pug</option>
+                    <option class="mainBreed" value="puggle">puggle</option>
+                    <option class="mainBreed" value="pyrenees">pyrenees</option>
+                    <option class="mainBreed" value="redbone">redbone</option>
+                    <option class="mainBreed" value="retriever">retriever</option>
+                    <option class="mainBreed" value="ridgeback">ridgeback</option>
+                    <option class="mainBreed" value="rottweiler">rottweiler</option>
+                    <option class="mainBreed" value="saluki">saluki</option>
+                    <option class="mainBreed" value="samoyed">samoyed</option>
+                    <option class="mainBreed" value="schipperke">schipperke</option>
+                    <option class="mainBreed" value="schnauzer">schnauzer</option>
+                    <option class="mainBreed" value="segugio">segugio</option>
+                    <option class="mainBreed" value="setter">setter</option>
+                    <option class="mainBreed" value="sharpei">sharpei</option>
+                    <option class="mainBreed" value="sheepdog">sheepdog</option>
+                    <option class="mainBreed" value="shiba">shiba</option>
+                    <option class="mainBreed" value="shihtzu">shihtzu</option>
+                    <option class="mainBreed" value="spaniel">spaniel</option>
+                    <option class="mainBreed" value="spitz">spitz</option>
+                    <option class="mainBreed" value="springer">springer</option>
+                    <option class="mainBreed" value="stbernard">stbernard</option>
+                    <option class="mainBreed" value="terrier">terrier</option>
+                    <option class="mainBreed" value="tervuren">tervuren</option>
+                    <option class="mainBreed" value="vizsla">vizsla</option>
+                    <option class="mainBreed" value="waterdog">waterdog</option>
+                    <option class="mainBreed" value="weimaraner">weimaraner</option>
+                    <option class="mainBreed" value="whippet">whippet</option>
+                    <option class="mainBreed" value="wolfhound">wolfhound</option>
+                </select>
+                <button type="submit" class="btn btn-primary"><i class="fa-solid fa-shield-dog"></i> Fetch a
+                    Breed</button>
+            </form>
+        </div>
+        <hr>
+        <p id="showing" class="title">Hello !</p>
+        <div class="row" id="parent-div">
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
